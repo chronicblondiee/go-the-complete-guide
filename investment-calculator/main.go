@@ -18,8 +18,8 @@ func main() {
 	//investmentAmount, years, expectedReturnRate := 1000.0, 10.0, 5.5
 	const inflationRate = 7.5
 	investmentAmount := 0.0
-	years := 10.0
-	expectedReturnRate := 5.5
+	years := 0.0
+	expectedReturnRate := 0.0
 
 	// take user input
 	fmt.Print("Please input your Investment Amount: ")
