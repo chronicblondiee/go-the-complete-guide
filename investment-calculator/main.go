@@ -17,11 +17,12 @@ func main() {
 	// short hand for declaring vars that infers the type and multi vars assigments
 	//investmentAmount, years, expectedReturnRate := 1000.0, 10.0, 5.5
 	const inflationRate = 7.5
-	investmentAmount := 1000.0
+	investmentAmount := 0.0
 	years := 10.0
 	expectedReturnRate := 5.5
 
 	// take user input
+	fmt.Scan(&investmentAmount) // sacn will overwrite the value initilised
 
 	// you can cast your vars using the following syntax
 	// var futureValue = float64(investmentAmount) * math.Pow(1+expectedReturnRate/100, float64(years))
