@@ -10,9 +10,12 @@ import (
 // main function
 func main() {
 
-	var investmentAmount float64 = 1000
-	var expectedReturnRate = 5.5
-	var years float64 = 10
+	// var investmentAmount float64 = 1000
+	// var expectedReturnRate = 5.5
+	// var years float64 = 10
+
+	// short hand for declaring vars that infers the type and multi vars assigments
+	investmentAmount, years, expectedReturnRate := 1000.0, 10.0, 5.5
 
 	// you can cast your vars using the following syntax
 	// var futureValue = float64(investmentAmount) * math.Pow(1+expectedReturnRate/100, float64(years))
