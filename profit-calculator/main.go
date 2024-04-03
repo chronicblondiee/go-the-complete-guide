@@ -11,9 +11,9 @@ revenue, expenses and tax rate
 
 Calculate the earings before tax (EBT)
 
-Calculate the earings after tax (EBT)
+Calculate the earings after tax (Profit)
 
-output EBT, profit and the ratio
+output EBT, profit and the ratio of EBT and Profit
 */
 
 func main() {
