@@ -22,7 +22,12 @@ func main() {
 	expectedReturnRate := 5.5
 
 	// take user input
+	fmt.Print("Please input your Investment Amount: ")
 	fmt.Scan(&investmentAmount) // sacn will overwrite the value initilised
+	fmt.Print("\nPlease add your Investment Term: ")
+	fmt.Scan(&years)
+	fmt.Print("\nPlease add your expected Return Rate: ")
+	fmt.Scan(&expectedReturnRate)
 
 	// you can cast your vars using the following syntax
 	// var futureValue = float64(investmentAmount) * math.Pow(1+expectedReturnRate/100, float64(years))
