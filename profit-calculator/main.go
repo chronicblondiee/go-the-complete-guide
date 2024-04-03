@@ -26,7 +26,7 @@ func main() {
 	fmt.Scan(&revenue)
 	fmt.Print("\nTotal Expenses: ")
 	fmt.Scan(&expenses)
-	fmt.Print("\nYour Current Tax Rate in decimal e.g 10 or 37.5 : ")
+	fmt.Print("\nYour Current Tax Rate: ")
 	fmt.Scan(&taxRate)
 
 	earingsBeforeTax := revenue - expenses
