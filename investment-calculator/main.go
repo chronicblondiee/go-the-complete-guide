@@ -24,7 +24,7 @@ func main() {
 	// take user input
 	fmt.Print("Please input your Investment Amount: ")
 	fmt.Scan(&investmentAmount) // sacn will overwrite the value initilised
-	fmt.Print("\nPlease add your Investment Term: ")
+	fmt.Print("\nPlease add your Investment Term in Years: ")
 	fmt.Scan(&years)
 	fmt.Print("\nPlease add your expected Return Rate: ")
 	fmt.Scan(&expectedReturnRate)
