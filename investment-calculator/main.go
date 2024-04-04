@@ -62,10 +62,12 @@ func main() {
 }
 
 // get future value function
-func calculateFutureValues(investmentAmount float64, years float64, expectedReturnRate float64) (float64, float64) {
+func calculateFutureValues(investmentAmount float64, years float64, expectedReturnRate float64) (fv float64, rfv float64) {
 	// keep in mind when returning values single returns only need type without () float64 multi returns uses (float64, int, string)
-	fv := investmentAmount * math.Pow(1+expectedReturnRate/100, years)
-	rfv := fv / math.Pow(1+inflationRate/100, years)
+	// if you declare your return types you can include the var names and they dont need to be initilise in the function
+	// if you do not set the var name in the return value you should initilise them then return the and only use the type turn in the function
+	fv = investmentAmount * math.Pow(1+expectedReturnRate/100, years)
+	rfv = fv / math.Pow(1+inflationRate/100, years)
 
 	return fv, rfv
 }
