@@ -34,8 +34,14 @@ func main() {
 	// better way to write this would be to use the correct types at the start
 	futureValue := investmentAmount * math.Pow(1+expectedReturnRate/100, years)
 	futureRealValue := futureValue / math.Pow(1+inflationRate/100, years)
-	//fmt.Printf("%.2f \n", futureValue)
-	fmt.Println(futureValue)
-	fmt.Println(futureRealValue)
+	// create a formatted string
+	formattedFv := fmt.Sprintf("Future Value: %.2f \n", futureValue)
+	formattedRFV := fmt.Sprintf("Future Value (Adjusted for inflation) %.2f \n", futureRealValue)
+	// output formatted
+	//fmt.Printf("Future Value: %.2f \nFuture Value (Adjusted for inflation) %.2f \n", futureValue, futureRealValue)
+	// output line
+	//fmt.Println("Future Value:", futureValue)
+	//fmt.Println(futureRealValue)
+	fmt.Print(formattedFv, formattedRFV)
 
 }
